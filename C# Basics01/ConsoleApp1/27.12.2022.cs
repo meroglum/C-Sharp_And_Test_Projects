@@ -10,7 +10,6 @@ class Program
         int abc;
         int yas = 29;
         int değer = 2147483547;
-
         int a, b, c;
         //int a = 1, b = 2, c = 3;
 

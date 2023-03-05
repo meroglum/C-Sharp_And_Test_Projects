@@ -218,7 +218,7 @@ class Program
             Bitsel operatörler aritmetik operatörler ve karşılaştırma operatörlerinden düşük önceliklidir fakat bu operatörler aynı satırda olduklarında aralarındaki öncelik sıralaması &(bitsel ve), ^ (bitsel özel veya), |(bitsel veya) şeklindedir.
 
             Console.WriteLine(9<<2); // 36 Olarak Ekrana Çıktı Gösterir.
-Console.    WriteLine(9>>2); // 2 Olarak Ekrana Çıktı Gösterir.
+            Console.WriteLine(9>>2); // 2 Olarak Ekrana Çıktı Gösterir.
 
             İlk örneğimiz üzerinde girdiğimiz 9 değerinin binary karşılığı 1001‘e karşılık gelir.
             Bu sayıyı 2 bit değerinde sağa kaydırdığımız zaman yeni elde edeceğimiz değer 0010 olur
