@@ -1,0 +1,75 @@
+﻿<Window x:Class="_2023._02._02DATABASE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2023._02._02DATABASE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="640">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="310"/>
+            <ColumnDefinition Width="310"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Ad: " Width="100"/>
+                <TextBox Name="txtAd" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Soyad: " Width="100"/>
+                <TextBox Name="txtSoyad" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Ünvanı: " Width="100"/>
+                <TextBox Name="txtTitle" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Açık Adres" Width="100"
+                           HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox Name="txtAddress"  Height="100" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Şehir: " Width="100"/>
+                <TextBox Name="txtCity" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Cinsiyet" Width="100"
+                           HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <RadioButton Content="Erkek" Name="rdMale"
+                             IsChecked= "True" GroupName="Gender"/>
+                <RadioButton Content="Kadın" Name="rdFemale"
+                             IsChecked= "False" GroupName="Gender"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btnKaydet" Content="Çalışanı Kaydet" Width="100"
+                        HorizontalAlignment="Right" Margin="5"/>
+                <Button Name="btnDuzenle" Content="Çalışanı Düzenle" Width="100"
+                        HorizontalAlignment="Right" Margin="5" Click="btnDuzenle_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="Çalışan Sil: " Width="100"/>
+                <TextBox Name="txtDeleteEmployeeID" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btnSil" Content="Çalışanı Sil (ID)" Width="100"
+                        HorizontalAlignment="Right" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Vertical" Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Çalışanlar:" Width="80"
+                           HorizontalAlignment="Center" VerticalAlignment="Top"
+                           FontWeight="Bold" Margin="3"/>
+                    <TextBlock Text="0 Kişi" Width="100"
+                           HorizontalAlignment="Center" VerticalAlignment="Top"
+                           FontWeight="Medium" Name="txtEmoloyeeCount" Margin="3"/>
+                </StackPanel>
+                <TextBox Name="txtSQLData"  Height="300" Width="300"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
